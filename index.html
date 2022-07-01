@@ -8,40 +8,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./сss/styles.css">
-    </head>
+</head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a class="logo-header" href="/index.html">Web<span class="logo-header-text">Studio</span></a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a class="nav-menu-link" href="./index.html">Студия</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a class="nav-menu-link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a class="nav-menu-link"  href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-            <ul class="menu-сontacts">
-                <li class="menu-contacts-item">
-                    <a class="menu-link-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="menu-contacts-item">
-                    <a class="menu-link-item" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="header-inner">
+                <nav class="nav">
+                    <a class="logo-header" href="/index.html">Web<span class="logo-header-text">Studio</span></a>
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a class="nav-menu-link"  href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="menu-сontacts">
+                        <li class="menu-contacts-item">
+                            <a class="menu-link-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="menu-contacts-item">
+                            <a class="menu-link-item" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                </ul>
+            </div>
+        </div>  
     </header>
     <main class="main">
-        <section class="section">
-            <h1 class="hero-title-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button" type="button">Заказать услугу</button>
+        <section class="hero-section section">
+            <div class="container">
+                <h1 class="hero-title-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="button" type="button">Заказать услугу</button></div>
         </section>
-        <section class="section">
-            <h2 class="title">Особенности</h2>
+        <section class="especially-section section">
+            <div class="container">
+                <h2 class="title visually-hidden">Особенности</h2>
             <ul class="subtitle">
                 <li class="subtitle-text"> 
                     <h3 class="subtitle-text-item">Внимание к деталям</h3>
@@ -60,17 +67,21 @@
                     <p class="text-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
-        <section class="section">
-            <h2 class="title">Чем мы занимаемся</h2>
+        <section class="do-section do-section-do section">
+            <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="image">
-                    <li class="image-item"><img src="./images/box1.jpg" width="370" height="295" alt="Десктопные приложения"></li>
-                    <li class="image-item"><img src="./images/box2.jpg" width="370" height="295" alt="Мобильные приложения"></li>
-                    <li class="image-item"><img src="./images/box3.jpg" width="370" height="295" alt="Дизайнерские решения"></li>
+                    <li class="image-item-do"><img src="./images/box1.jpg" width="370" height="295" alt="Десктопные приложения"></li>
+                    <li class="image-item-do"><img src="./images/box2.jpg" width="370" height="295" alt="Мобильные приложения"></li>
+                    <li class="image-item-do"><img src="./images/box3.jpg" width="370" height="295" alt="Дизайнерские решения"></li>
                 </ul>
+            </div>          
         </section>
-        <section class="section">
-            <h2 class="title">Наша команда</h2>
+        <section class="comand-section section">
+            <div class="container">
+                <h2 class="title">Наша команда</h2>
                 <ul class="title-images">
                     <li class="subtitle-images">
                         <img class="image-item" src="./images/img1.jpg" width="270" height="260" alt="Игорь Демьяненко Product Designer">
@@ -93,23 +104,30 @@
                         <p class="subtitle-images-item-text">UI Designer</p>    
                     </li>
                 </ul>
+            </div>            
         </section>
     </main>
     <footer class="footer">
-        <a class="logo-footer" href="/index.html">Web<span class="logo-footer-text">Studio</span></a>
-        <address class="footer-contacts">
-            <ul class="address-contacts" >
-               <li class="address-contacts-item">
-                <a class="address-item" href="#">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-               <li class="address-contacts-item">
-                <a class="address-item-link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-               <li class="address-contacts-item">
-                <a class="address-item-link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-            </ul>
-        </address>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-info">
+                    <a class="logo-footer" href="/index.html">Web<span class="logo-footer-text">Studio</span></a>
+                </div>
+                <address class="footer-contacts">
+                <ul class="address-contacts" >
+                   <li class="address-contacts-item">
+                    <a class="address-item" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                   <li class="address-contacts-item">
+                    <a class="address-item-link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                   <li class="address-contacts-item">
+                    <a class="address-item-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+                </ul>
+                </address>
+            </div>
+        </div>       
     </footer>    
 </body>
 </html>
